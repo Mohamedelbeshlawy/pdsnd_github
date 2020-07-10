@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 #This is the givin data
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -163,7 +162,17 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+def more_data(df):
+    count = 0
+    raw_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+    while True:
+        if raw_data.lower() == 'yes':
+            count += 1
+            print(df.head(5*count))
+            raw_data = input('\nWould you like to see another 5 lines of raw data? Enter yes or no.\n')
+        else:
+            break
+            
 def main():
     while True:
         city, month, day = get_filters()
@@ -173,16 +182,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
-        count = 0
-        raw_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
-        while True:
-            if raw_data.lower() == 'yes':
-                count += 1
-                print(df.head(5*count))
-                raw_data = input('\nWould you like to see another 5 lines of raw data? Enter yes or no.\n')
-            else:
-                break
+        more_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
