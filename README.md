@@ -12,4 +12,5 @@ bikeshare.py & .gitignore file
 
 ### Credits
 https://stackoverflow.com/questions/10744305/how-to-create-a-gitignore-file
+https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li
 
