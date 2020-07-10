@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+10/7/2020
 
 ### Project Title
-Replace the Project Title
+Posting my work on GitHub
 
 ### Description
-Describe what your project is about and what it does
+During the last month, I have been working on a project using python languange. It was about bikeshare data in three states(Chicago, New York and Washington)
 
 ### Files used
-Include the files used
+bikeshare.py & .gitignore file
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://stackoverflow.com/questions/10744305/how-to-create-a-gitignore-file
 
