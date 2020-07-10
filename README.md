@@ -1,5 +1,5 @@
 ### Date created
-10/7/2020
+Friday 10/7/2020
 
 ### Project Title
 Posting my work on GitHub
